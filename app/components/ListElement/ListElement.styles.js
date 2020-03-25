@@ -1,15 +1,19 @@
 import { StyleSheet } from 'react-native';
-import { colors } from 'constants';
+import { colors, responsive } from 'constants';
+
 export default StyleSheet.create({
   listItem: {
     borderColor: colors.secondary,
     borderWidth: 1,
     borderRadius: 10,
+    marginBottom: 44,
+    width: responsive.responsiveWidth(90),
   },
   listItemContainer: {
     paddingVertical: 21,
     paddingLeft: 21,
     paddingRight: 12,
+    width: '100%',
   },
   dateAndTimeContainer: {
     flexDirection: 'row',
@@ -19,7 +23,6 @@ export default StyleSheet.create({
     paddingTop: 8,
   },
   decriptionContainer: {
-    width: 'auto',
     marginTop: 11,
     borderRadius: 11,
     paddingVertical: 4,

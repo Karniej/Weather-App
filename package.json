@@ -8,7 +8,8 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
-    "test:ci": "jest --json --output-file test-results.json --coverage"
+    "test:ci": "jest --json --output-file test-results.json --coverage",
+    "podinstall": "cd ios && pod install && cd .."
   },
   "dependencies": {
     "@react-native-community/cli": "^4.3.0",
@@ -16,10 +17,6 @@
     "prop-types": "^15.7.2",
     "react": "16.9.0",
     "react-native": "0.61.5",
-    "react-native-gesture-handler": "^1.6.1",
-    "react-native-reanimated": "^1.7.0",
-    "react-native-svg": "^12.0.3",
-    "react-navigation": "^4.3.3",
     "react-redux": "^7.2.0",
     "redux": "^4.0.5",
     "redux-axios-middleware": "^4.0.1",

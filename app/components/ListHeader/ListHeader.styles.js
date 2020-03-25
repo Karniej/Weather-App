@@ -3,7 +3,7 @@ import { colors, textStyles } from 'constants';
 export default StyleSheet.create({
   listHeader: {
     alignItems: 'center',
-    paddingTop: 50,
+    paddingVertical: 50,
     justifyContent: 'space-between',
   },
   h2: { paddingTop: 15 },

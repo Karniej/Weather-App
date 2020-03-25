@@ -5,7 +5,7 @@ import { Header, Button } from 'components';
 import { textStyles, colors } from 'constants';
 import styles from './ListHeader.styles';
 
-const ListHeader = ({ onPress }) => {
+const ListHeader = ({ onPress, onChangeText, onSubmitEditing }) => {
   return (
     <View style={styles.listHeader}>
       <Header text="Hello Sunshine!" />
@@ -19,8 +19,10 @@ const ListHeader = ({ onPress }) => {
         Please enter a city
       </Text>
       <TextInput
+        onChangeText={onChangeText}
         style={styles.textInput}
         placeholderTextColor={colors.textColor}
+        onSubmitEditing={onSubmitEditing}
       />
       <Button onPress={onPress} />
     </View>
@@ -28,7 +30,9 @@ const ListHeader = ({ onPress }) => {
 };
 
 ListHeader.propTypes = {
-  onPress: func,
+  onPress: func.isRequired,
+  onChangeText: func.isRequired,
+  onSubmitEditing: func.isRequired,
 };
 
 export default ListHeader;
