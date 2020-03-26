@@ -4,7 +4,11 @@ import { string, bool } from 'prop-types';
 import styles from './Header.styles';
 
 const Header = ({ text, isPrimary }) => (
-  <Text style={[styles.header, isPrimary && styles.headerPrimary]}>{text}</Text>
+  <Text
+    testID="Header"
+    style={[styles.header, isPrimary && styles.headerPrimary]}>
+    {text}
+  </Text>
 );
 
 Header.propTypes = {

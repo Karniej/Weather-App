@@ -4,7 +4,7 @@ import * as images from 'images';
 import styles from './Footer.styles';
 const Footer = () => {
   return (
-    <View style={styles.footer}>
+    <View testID="Footer" style={styles.footer}>
       <Image source={images.taxiDesign} />
     </View>
   );

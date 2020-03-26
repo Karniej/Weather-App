@@ -6,6 +6,7 @@ module.exports = {
     '@assets/.*': 'rootDir>/app/assets',
     '@constants/.*': 'rootDir>/app/constants',
     '@images/.*': 'rootDir>/app/assets/images',
+    '@screens/.*': 'rootDir>/app/screens',
   },
   testPathIgnorePatterns: ['<rootDir>/.history'],
   moduleFileExtensions: ['js', 'json'],

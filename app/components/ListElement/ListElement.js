@@ -10,7 +10,7 @@ const ListElement = ({ dt_txt, main: { temp, feels_like }, weather }) => {
   const time = dateAndTime[1];
   const { description } = weather[0];
   return (
-    <View style={styles.listItem}>
+    <View testID="ListElement" style={styles.listItem}>
       <View style={styles.listItemContainer}>
         <View style={styles.dateAndTimeContainer}>
           <Text style={textStyles.dateAndTime}>{day}</Text>

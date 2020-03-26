@@ -7,7 +7,7 @@ import styles from './ListHeader.styles';
 
 const ListHeader = ({ onPress, onChangeText, onSubmitEditing }) => {
   return (
-    <View style={styles.listHeader}>
+    <View testID="ListHeader" style={styles.listHeader}>
       <Header text="Hello Sunshine!" />
       <View style={styles.h2}>
         <Header
@@ -24,7 +24,7 @@ const ListHeader = ({ onPress, onChangeText, onSubmitEditing }) => {
         placeholderTextColor={colors.textColor}
         onSubmitEditing={onSubmitEditing}
       />
-      <Button onPress={onPress} />
+      <Button testID="button" onPress={onPress} />
     </View>
   );
 };
