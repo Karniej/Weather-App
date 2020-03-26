@@ -24,7 +24,7 @@ const ListHeader = ({ onPress, onChangeText, onSubmitEditing }) => {
         placeholderTextColor={colors.textColor}
         onSubmitEditing={onSubmitEditing}
       />
-      <Button testID="button" onPress={onPress} />
+      <Button testID="Button" onPress={onPress} />
     </View>
   );
 };

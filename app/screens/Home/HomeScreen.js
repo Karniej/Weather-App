@@ -32,7 +32,7 @@ const HomeScreen = () => {
   return (
     <React.Fragment>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView style={styles.container}>
+      <SafeAreaView testID="Home" style={styles.container}>
         <FlatList
           contentInsetAdjustmentBehavior="automatic"
           style={styles.flatList}

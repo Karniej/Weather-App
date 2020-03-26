@@ -12,7 +12,7 @@ const otherProps = {
   text: 'Header',
 };
 
-describe('Header should match snapshot with default props', async () => {
+describe('Header should match snapshot with default props', () => {
   const { getByTestId, getAllByName } = render(<Header {...defaultProps} />);
   const header = getByTestId('Header');
   expect(header).toMatchSnapshot();
@@ -23,7 +23,7 @@ describe('Header should match snapshot with default props', async () => {
   });
 });
 
-describe('Header should match snapshot with other props', async () => {
+describe('Header should match snapshot with other props', () => {
   const { getByTestId, getAllByName } = render(<Header {...otherProps} />);
   const header = getByTestId('Header');
   expect(header).toMatchSnapshot();
